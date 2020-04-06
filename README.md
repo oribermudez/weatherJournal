@@ -1,2 +1,2 @@
-# weatherJournal
-A dynamic weather app
+# Weather Journal
+
