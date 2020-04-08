@@ -1,0 +1,49 @@
+@import url("./form.css");
+@import url("./entryHolder.css");
+
+body {
+  background-image: url('../images/blue.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif !important;
+  color: #fff;
+}
+
+h1 {
+  font-family: 'Berkshire Swash', cursive;
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+  margin: 10%;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  h1 {
+    font-size: 6rem;
+    letter-spacing: 5px;
+  }
+}
+
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 6rem;
+    letter-spacing: 5px;
+    margin: 5%;
+  }
+}
