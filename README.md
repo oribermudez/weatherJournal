@@ -14,7 +14,7 @@ You must have Node.js installed.
 ### Installing
 
 Clone the repo and install the node modules.
-Your can do that by typing npm i in your terminal.
+Your can do that by typing 'npm i' in your terminal.
 
 ### Running the app
 
