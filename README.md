@@ -13,14 +13,14 @@ You must have Node.js installed.
 
 ### Installing
 
-Clone the repo and install the node modules.
-Your can do that by typing 'npm i' in your terminal.
+Clone the repo and install the node modules. <br />
+Your can do that by typing 'npm i' in your terminal. <br />
 
 ### Running the app
 
-Open your terminal and go to the project folder.
-Type 'node server.js' in the terminal to run the server.
-Open your web browser and go to http://localhost:3000/ to see the app.
+Open your terminal and go to the project folder. <br />
+Type 'node server.js' in the terminal to run the server. <br />
+Open your web browser and go to http://localhost:3000/ to see the app. <br />
 
 ## Built With
 
