@@ -16,6 +16,12 @@ You must have Node.js installed.
 Clone the repo and install the node modules.
 Your can do that by typing npm i in your terminal.
 
+### Running the app
+
+Open your terminal and go to the project folder.
+Type 'node server.js' in the terminal to run the server.
+Open your web browser and go to http://localhost:3000/ to see the app.
+
 ## Built With
 
 * JavaScript
