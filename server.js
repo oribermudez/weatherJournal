@@ -38,6 +38,6 @@ app.post('/saveWeather', (req, res) => {
     temp: req.body.temp,
     content: req.body.content
   };
-  res.status(200).send({ data: projectData });
+  res.send({ data: projectData });
 })
 
