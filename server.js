@@ -15,6 +15,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 const cors = require('cors');
 app.use(cors());
+const moment = require('moment');
 
 /* Initialize the main project folder */
 app.use(express.static('website'));
@@ -26,25 +27,17 @@ app.listen( port, () => (console.log(`Server running on localhost: ${port}`)));
 
 // GET route
 app.get('/weatherInfo', getWeather);
-
 function getWeather(req, res) {
   res.send(projectData);
 }
 
 // POST route
-app.post('/update', updateWeather);
-
-function updateWeather(req, res) {
-  res.send('POST received');
-}
-
-// POST an animal
-const data = [];
-
-app.post('/store', storeWeatherInfo);
-
-function storeWeatherInfo(req, res) {
-  console.log(req.body);
-  // data.push(req.body);
-}
+app.post('/saveWeather', (req, res) => {
+  projectData = {
+    date: moment(req.body.date).format('dddd, MMMM Do YYYY'),
+    temp: req.body.temp,
+    content: req.body.content
+  };
+  res.status(200).send({ data: projectData });
+})
 

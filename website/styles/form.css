@@ -42,6 +42,18 @@ textarea::placeholder {
   padding: 2%;
 }
 
+#return {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-top: 10%;
+}
+
+#return img {
+  width: 100%;
+}
+
 @media (min-width: 600px) and (max-width: 1024px) {
   input[type="text"], textarea {
     font-size: 1.8rem;
@@ -80,5 +92,11 @@ textarea::placeholder {
   .required {
     font-size: 0.9rem;
     padding: 0%;
+  }
+
+  #return {
+    width: 50px;
+    height: 50px;
+    margin-top: 0%;
   }
 }
